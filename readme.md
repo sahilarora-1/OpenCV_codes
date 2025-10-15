@@ -1,20 +1,123 @@
-# 🧠 OpenCV Image Processor
-# gray_convertor.py
+🧠 OpenCV Image Processor
 
-A simple Python project demonstrating basic image processing using **OpenCV**.  
-This program allows users to:
-- Upload an image  
-- Choose whether to display or convert it to grayscale  
-- Save the processed image back to disk  
+A simple Python project demonstrating basic image processing using OpenCV.
+This collection of scripts helps beginners understand how to manipulate images — including converting to grayscale, resizing, rotating, and flipping.
 
-# shape_attribute.py
-can be used to get info about height, width and color_chanels
+📦 Overview
 
-# resize.py
-can be used to resize the image, it uses resize function
+Each script in this project performs a specific image operation.
+The main goal is to help you learn essential OpenCV functions step by step.
 
-# rotation.py
-can be used to rotate the image according to different angles 
+🖤 1. gray_convertor.py
 
-# flipped.py
-it can be used to flip the image vertically(0), horizontally(1) and both(-1)
+A program to:
+
+Load an image from disk
+
+Convert it to grayscale using cv2.cvtColor()
+
+Display and optionally save the converted image
+
+Main Function Used:
+
+gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+📐 2. shape_attribute.py
+
+Used to fetch image properties such as:
+
+Height
+
+Width
+
+Number of color channels
+
+Main Concept:
+
+h, w, c = image.shape
+print("Height:", h, "Width:", w, "Channels:", c)
+
+📏 3. resize.py
+
+Used to resize the image to custom dimensions provided by the user.
+
+Main Function Used:
+
+resized = cv2.resize(image, (width, height))
+
+
+Features:
+
+Prompts user for new dimensions
+
+Displays and optionally saves resized image
+
+🔄 4. rotation.py
+
+Used to rotate an image around its center by a given angle.
+
+Main Functions Used:
+
+R = cv2.getRotationMatrix2D(center, angle, scale)
+rotated_image = cv2.warpAffine(image, R, (w, h))
+
+
+Features:
+
+Allows rotation by any angle (e.g., 45°, 90°, etc.)
+
+Can scale the image (zoom in/out) using the scale parameter
+
+🔃 5. flipped.py
+
+Used to flip images in different directions.
+
+Main Function Used:
+
+cv2.flip(image, flipCode)
+
+
+Flip Codes:
+
+Flip Code	Direction
+0	Vertical
+1	Horizontal
+-1	Both (Vertical + Horizontal)
+
+Features:
+
+Displays all flipped versions
+
+Allows user to save the output images
+
+⚙️ Requirements
+
+Make sure you have:
+
+pip install opencv-python
+
+
+Place your image file in the same folder (e.g., car.jpg or resized_car.jpg) before running the scripts.
+
+🧠 Learning Outcomes
+
+By completing this project, you’ll learn:
+
+How to load and display images using OpenCV
+
+How to access image dimensions and channels
+
+How to perform common transformations (flip, rotate, resize)
+
+How to save processed images
+
+👨‍💻 Author
+
+Sahil Arora
+Learning OpenCV for computer vision and image processing.
+Repository created for hands-on practice and demonstration.
+
+💬 Feedback
+
+Feel free to open an issue or suggest improvements!
+Your feedback helps make this repo better. 🙌
