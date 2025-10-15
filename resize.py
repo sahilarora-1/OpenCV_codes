@@ -17,6 +17,8 @@ if res == 'y':
     y = int(input("Enter height of the resized image: "))
     dimensions = (x, y)
     resized = cv2.resize(image, dimensions)
+    cv2.imwrite('resized_car.jpg',resized)
+    print("Image resized and saved as 'resized_car.jpg'.")
     cv2.imshow("Resized Image", resized)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
