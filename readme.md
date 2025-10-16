@@ -1,14 +1,14 @@
-🧠 OpenCV Image Processor
+# 🧠 OpenCV Image Processor
 
 A simple Python project demonstrating basic image processing using OpenCV.
 This collection of scripts helps beginners understand how to manipulate images — including converting to grayscale, resizing, rotating, and flipping.
 
-📦 Overview
+# 📦 Overview
 
 Each script in this project performs a specific image operation.
 The main goal is to help you learn essential OpenCV functions step by step.
 
-🖤 1. gray_convertor.py
+# 🖤 1. gray_convertor.py
 
 A program to:
 
@@ -22,7 +22,7 @@ Main Function Used:
 
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-📐 2. shape_attribute.py
+# 📐 2. shape_attribute.py
 
 Used to fetch image properties such as:
 
@@ -37,7 +37,7 @@ Main Concept:
 h, w, c = image.shape
 print("Height:", h, "Width:", w, "Channels:", c)
 
-📏 3. resize.py
+# 📏 3. resize.py
 
 Used to resize the image to custom dimensions provided by the user.
 
@@ -52,7 +52,7 @@ Prompts user for new dimensions
 
 Displays and optionally saves resized image
 
-🔄 4. rotation.py
+# 🔄 4. rotation.py
 
 Used to rotate an image around its center by a given angle.
 
@@ -68,7 +68,7 @@ Allows rotation by any angle (e.g., 45°, 90°, etc.)
 
 Can scale the image (zoom in/out) using the scale parameter
 
-🔃 5. flipped.py
+# 🔃 5. flipped.py
 
 Used to flip images in different directions.
 
@@ -90,7 +90,27 @@ Displays all flipped versions
 
 Allows user to save the output images
 
-⚙️ Requirements
+# 6. shapes_assignment.py
+
+
+This Python script allows you to interactively draw shapes and add custom text to any image using the OpenCV library.
+It’s part of my OpenCV learning journey, focusing on image manipulation and user-driven graphic overlays.
+
+🎯 Features
+
+🖊️ Draw lines, rectangles, and circles with custom coordinates.
+
+✍️ Add text anywhere on the image with adjustable font, color, and size.
+
+🎨 Choose color dynamically — red, green, or blue (with fallback to white).
+
+💾 Option to save the modified image with a custom filename.
+
+🧠 Simple command-line interface for user input.
+
+
+
+# ⚙️ Requirements
 
 Make sure you have:
 
@@ -108,6 +128,8 @@ How to load and display images using OpenCV
 How to access image dimensions and channels
 
 How to perform common transformations (flip, rotate, resize)
+
+How to draw different shapes on images(line, rectangle, circle, text)
 
 How to save processed images
 
