@@ -90,7 +90,8 @@ Displays all flipped versions
 
 Allows user to save the output images
 
-# 6. shapes_assignment.py
+
+# . shapes_assignment.py
 
 
 This Python script allows you to interactively draw shapes and add custom text to any image using the OpenCV library.
@@ -107,6 +108,18 @@ It’s part of my OpenCV learning journey, focusing on image manipulation and us
 💾 Option to save the modified image with a custom filename.
 
 🧠 Simple command-line interface for user input.
+
+
+# video_function
+**capture_video**
+
+Capture live video from your webcam or external device.
+
+video = cv2.VideoCapture(0)
+
+
+Press Q to quit the live feed.
+
 
 
 
@@ -132,6 +145,7 @@ How to perform common transformations (flip, rotate, resize)
 How to draw different shapes on images(line, rectangle, circle, text)
 
 How to save processed images
+
 
 👨‍💻 Author
 
