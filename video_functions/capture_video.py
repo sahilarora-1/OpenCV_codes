@@ -1,5 +1,5 @@
 import cv2
-video=cv2.VideoCapture(0)#0 to use web cam
+video=cv2.VideoCapture(0)#0 to use web cam; #1 can be used to show web cam or external devices's video
 while True:
     ret, frame=video.read()
     if not ret:
