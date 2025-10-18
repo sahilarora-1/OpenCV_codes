@@ -141,6 +141,7 @@ This file will help to apply Gaussian blur which will smooth the image
 
 
 
+
 # ⚙️ Requirements
 
 Make sure you have:
