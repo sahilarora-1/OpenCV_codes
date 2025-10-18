@@ -120,6 +120,18 @@ video = cv2.VideoCapture(0)
 
 Press Q to quit the live feed.
 
+**saving_video**
+
+A simple Python script that captures video from your webcam and saves it to your computer using OpenCV.
+Press ‘q’ anytime to stop recording and automatically save your video.
+
+🧩 Features
+
+✅ Records live video from your webcam
+✅ Saves output as .avi format
+✅ Displays a live preview window while recording
+✅ Stops and saves video with a single key press (q)
+✅ Includes proper error handling for camera issues
 
 
 
