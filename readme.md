@@ -133,6 +133,12 @@ Press ‘q’ anytime to stop recording and automatically save your video.
 ✅ Stops and saves video with a single key press (q)
 ✅ Includes proper error handling for camera issues
 
+# image Filtering
+**Gaussian_blur**
+
+This file will help to apply Gaussian blur which will smooth the image
+
+
 
 
 # ⚙️ Requirements
