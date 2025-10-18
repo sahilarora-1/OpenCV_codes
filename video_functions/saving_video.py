@@ -15,12 +15,13 @@ video=cv2.VideoWriter('stored_vdieo.avi',codec,30,(width,height))
 
 while True:
     sucess,image=camera.read()
+    #error handling if video is not captured
     if not sucess:
         print("Video not found !! check source")
         break
     
-    video.write(image)
-    cv2.imshow('video recording',image)
+    video.write(image)#writing the captured video frame by frame
+    cv2.imshow('video recording',image)#showing the video while recording
 
     #checking for stoping condition
     if cv2.waitKey(1) & 0xFF==ord('q'):
