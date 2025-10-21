@@ -134,10 +134,13 @@ Press ‘q’ anytime to stop recording and automatically save your video.
 ✅ Includes proper error handling for camera issues
 
 # image Filtering
-**Gaussian_blur**
+This project demonstrates how to apply **Median Blur** and **Gaussian Blur** filters to an image using **OpenCV** in Python.  
+Both filters help reduce image noise but work differently and are suited for different use cases.
 
-This file will help to apply Gaussian blur which will smooth the image
-
+**Features**
+- Apply **Median Blur** to remove salt-and-pepper noise while preserving edges.
+- Apply **Gaussian Blur** to achieve smooth, natural blurring effects.
+- Visualize the difference between the two methods.
 
 
 

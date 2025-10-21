@@ -5,7 +5,7 @@ if image is not None:
     res=input("Do you to apply Gaussian Blur (yes/no)=").lower()
     if res=='yes':
         #cv2.GaussianBlur(source, (kernel_x, kernel_Y),sigma(if 0 it automatically detects it)
-        blur=cv2.GaussianBlur(image,(11,11),0)
+        blur=cv2.GaussianBlur(image,(11,11),0)#kernel should always be odd number
 
         save=input("Do you want to save the image(yes/no)").lower()
         cv2.imshow("Orignal Image",image)
