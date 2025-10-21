@@ -134,13 +134,24 @@ Press ‘q’ anytime to stop recording and automatically save your video.
 ✅ Includes proper error handling for camera issues
 
 # image Filtering
-This project demonstrates how to apply **Median Blur** and **Gaussian Blur** filters to an image using **OpenCV** in Python.  
-Both filters help reduce image noise but work differently and are suited for different use cases.
+This project demonstrates how to apply **Median Blur** , **Gaussian Blur** and **sharpening** filters to an image using **OpenCV** in Python.  
+these filters help reduce image noise but work differently and are suited for different use cases.
+Sharpening is used to enhance the features to pick important edges.
 
 **Features**
 - Apply **Median Blur** to remove salt-and-pepper noise while preserving edges.
 - Apply **Gaussian Blur** to achieve smooth, natural blurring effects.
-- Visualize the difference between the two methods.
+-Sharpening is used to enhance edges and fine details in an image.
+It makes the borders between different regions more distinct — meaning objects look more defined, crisper, and less blurry.
+
+
+# Edge_detection
+
+**Canny_edge**
+The Canny Edge Detection method is a powerful and widely used technique in computer vision for detecting edges in an image. It works by identifying areas where the intensity of pixels changes sharply — typically indicating object boundaries or edges. The algorithm follows a multi-stage process that includes noise reduction using Gaussian blur, gradient calculation, non-maximum suppression to thin edges, and hysteresis thresholding to decide which edges are real and which are not.
+
+In OpenCV, the method can be easily applied using the cv2.Canny() function. It takes two threshold values that control the edge detection sensitivity — a lower threshold and an upper threshold. The Canny method produces a binary image where edges are highlighted in white against a black background. It is often used as a preprocessing step in tasks like object detection, contour finding, and image segmentation due to its accuracy and efficiency in identifying meaningful edges while minimizing noise.
+
 
 
 
